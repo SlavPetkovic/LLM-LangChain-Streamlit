@@ -1,0 +1,4 @@
+2023-12-03 03:05:19,329 lib.core - INFO:DataLoader initialized for file: <Logger __main__ (INFO)>
+2023-12-03 03:05:19,341 lib.core - INFO:DataLoader initialized for file: C:\Users\slavp\AppData\Local\Temp\tmpqe_pr_5v.pdf
+2023-12-03 03:05:19,342 lib.core - INFO:Starting File Load Process: C:\Users\slavp\AppData\Local\Temp\tmpqe_pr_5v.pdf
+2023-12-03 03:05:19,342 lib.core - INFO:Loading PDF file: C:\Users\slavp\AppData\Local\Temp\tmpqe_pr_5v.pdf
