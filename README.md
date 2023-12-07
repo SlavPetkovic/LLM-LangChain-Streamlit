@@ -7,7 +7,7 @@ It allows users to upload documents, process them, and use a LLM to answer quest
 At the moment application leverages OpenAI's GPT model for generating answers.
 Llama2 70b and other LLMs are going to be implemented as well. 
 
-![diagram.png](assets%2Fdiagram.png)
+![Diagram.png](assets%2Fdiagram.png)
 
 ## Features
 - **Document Upload**: Users can upload documents in various formats (PDF, DOCX, TXT).
