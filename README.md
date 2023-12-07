@@ -1,6 +1,6 @@
 
 # Language Model-Based Question-Answering Application
-
+![app.png](assets%2Fapp.png)
 ## Overview
 This project is a Streamlit-based web application designed to provide question-answering capabilities using language models. 
 It allows users to upload documents, process them, and use a language model to answer questions based on the content of these documents. 
