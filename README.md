@@ -2,8 +2,8 @@
 # Language Model-Based Question-Answering Application
 ![app.png](assets%2Fapp.png)
 ## Overview
-This project is a Streamlit-based web application designed to provide question-answering capabilities using language models. 
-It allows users to upload documents, process them, and use a language model to answer questions based on the content of these documents. 
+This project is a Streamlit-based web application designed to provide question-answering capabilities using Large Language Models (LLM). 
+It allows users to upload documents, process them, and use a LLM to answer questions based on the content of these documents. 
 At the moment application leverages OpenAI's GPT model for generating answers.
 Llama2 70b and other LLMs are going to be implemented as well. 
 

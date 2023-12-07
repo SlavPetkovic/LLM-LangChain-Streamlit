@@ -68,15 +68,20 @@ def embedding_cost(texts):
     except Exception as e:
         logger.error(f"Error in calculating embedding cost: {e}")
 
-
 if __name__ == "__main__":
     import os
     import tempfile
     from dotenv import load_dotenv, find_dotenv
     load_dotenv(find_dotenv(), override=True)
+    logging.basicConfig(level=logging.ERROR)
 
     st.image('assets/q.png')
     st.subheader('LLM Question-Answering Application')
+
+    # Initialize history in session state if not present
+    if 'history' not in st.session_state:
+        st.session_state.history = ''
+
     with (st.sidebar):
         api_key = st.text_input('Your OpenAI API Key', type='password')
         if api_key:
@@ -120,12 +125,16 @@ if __name__ == "__main__":
             vector_store = st.session_state.vs
             st.write(f'k: {k}')
             answer = prompt(vector_store, query, k)
-            st.text_area('LLM Answer:', value=answer)
+            st.text_area('LLM Answer:', value=answer, height=300)
 
             st.divider()
-            if 'history' not in st.session_state:
-                st.session_state.history = ''
+            # Update history in session state
             value = f'Q:{query} \nA: {answer}'
-            st.session_state.history = f'{value} \n {"-"*100} \n {st.session_state.history}'
-            h = st.session_state.history
-            st.text_area(label = 'Chat History', value = h, key= 'history', height=400)
+            if 'history' in st.session_state:
+                st.session_state.history = f'{value} \n {"-" * 100} \n {st.session_state.history}'
+            else:
+                st.session_state.history = value
+
+            # Use session state for widget value, without a default
+            st.text_area(label='Chat History', value=st.session_state.history if 'history' in st.session_state else '',
+                         key='history', height=400)

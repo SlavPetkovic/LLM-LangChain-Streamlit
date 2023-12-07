@@ -1,4 +1,4 @@
-2023-12-03 03:05:19,329 lib.core - INFO:DataLoader initialized for file: <Logger __main__ (INFO)>
-2023-12-03 03:05:19,341 lib.core - INFO:DataLoader initialized for file: C:\Users\slavp\AppData\Local\Temp\tmpqe_pr_5v.pdf
-2023-12-03 03:05:19,342 lib.core - INFO:Starting File Load Process: C:\Users\slavp\AppData\Local\Temp\tmpqe_pr_5v.pdf
-2023-12-03 03:05:19,342 lib.core - INFO:Loading PDF file: C:\Users\slavp\AppData\Local\Temp\tmpqe_pr_5v.pdf
+2023-12-07 02:41:31,612 lib.core - INFO:Processing query: Whats the latest stocking schedule in lumpkin county?
+2023-12-07 02:41:31,841 httpx - INFO:HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2023-12-07 02:41:34,770 httpx - INFO:HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2023-12-07 02:41:34,774 lib.core - INFO:Query processed successfully.
