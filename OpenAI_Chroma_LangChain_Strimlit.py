@@ -75,8 +75,8 @@ if __name__ == "__main__":
     load_dotenv(find_dotenv(), override=True)
     logging.basicConfig(level=logging.ERROR)
 
-    st.image('assets/q.png')
-    st.subheader('LLM Question-Answering Application')
+    st.image('assets/q2.png')
+    st.subheader('Diving Companion')
 
     # Initialize history in session state if not present
     if 'history' not in st.session_state:
@@ -118,7 +118,7 @@ if __name__ == "__main__":
                 st.session_state.vs = vector_store
                 st.success("File Uploaded, Chunked and Embedded Successfully.")
 
-    query = st.text_input("Ask the question about the content of your file")
+    query = st.text_input("Ask the question about your diving experiences")
 
     if query:
         if 'vs' in st.session_state:
